@@ -13,6 +13,15 @@ class App extends Component {
 		]
 	}
 
+	constructor() {
+		super()
+		console.log('app - Constructor')
+	}
+
+	componentDidMount = () => {
+		console.log('app - mounted')
+	}
+
 	handleResetAll = () => {
 		const counters = this.state.counters.map(c => {
 			c.currentValue = c.defaultValue
@@ -44,6 +53,7 @@ class App extends Component {
 	}
 
 	render() {
+		console.log('app - render')
 		return (
 			<>
 				<NavBar counterLength={this.state.counters.filter(c => c.currentValue > 0).length} />
