@@ -25,7 +25,7 @@ class Counter extends Component {
 				<button onClick={() => this.props.onIncrement(this.props.counter)} className='btn btn-secondary btn-sm'>
 					increment Val
 				</button>
-				<button onClick={() => this.props.onReset(this.props.counter)} Reset className='btn btn-warning btn-sm m-2'>
+				<button onClick={() => this.props.onSingleReset(this.props.counter)} Reset className='btn btn-warning btn-sm m-2'>
 					reset Val
 				</button>
 				<button onClick={() => this.props.onDelete(this.props.counter)} className='btn btn-danger btn-sm m-2'>
